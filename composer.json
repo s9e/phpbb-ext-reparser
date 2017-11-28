@@ -1,0 +1,18 @@
+{
+	"name": "s9e/reparser",
+	"type": "phpbb-extension",
+	"description": "Reparse",
+	"version": "0.1.0",
+	"keywords": ["phpbb","reparse"],
+	"license": "MIT",
+	"require": {
+		"php": ">5.4.0"
+	},
+	"authors": [{ "name": "JoshyPHP" }],
+	"extra": {
+		"display-name": "s9e/reparser",
+		"soft-require": {
+			"phpbb/phpbb": "3.2.*"
+		}
+	}
+}

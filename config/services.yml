@@ -1,0 +1,17 @@
+services:
+  s9e.reparser.controller:
+    class: s9e\reparser\controller
+    arguments:
+      - '@auth'
+      - '%core.root_path%'
+      - '@request'
+      - '@text_reparser.post_text'
+      - '@user'
+  s9e.reparser.listener:
+    class: s9e\reparser\listener
+    arguments:
+      - '@auth'
+      - '@controller.helper'
+      - '@user'
+    tags:
+      - { name: event.listener }

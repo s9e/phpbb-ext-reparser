@@ -1,0 +1,3 @@
+s9e.reparser.reparse.post:
+    path: /reparser/reparse/post
+    defaults: { _controller: s9e.reparser.controller:reparsePost }
